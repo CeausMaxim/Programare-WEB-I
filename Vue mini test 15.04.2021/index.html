@@ -11,32 +11,34 @@
 <body>
     <!-- EX 1 and EX 2 -->
 
-    <div id="application">
+    <!-- <div id="application">
         {{ username }}
         <br>
         <input type="date" v-model="year">
         <label>Возраст</label> {{ age }}
-    </div>
+    </div> -->
 
 
     <!-- EX 3 -->
 
-    <!-- <div id="app">
+    <div id="app">
         <p>На каком языке программируете?</p>
-        <input type="radio" v-model="JS" name="language">
-        <label>JS</label>
-        <input type="radio" v-model="Python" name="language">
-        <label>Python</label>
-        <input type="radio" v-model="Java" name="language">
-        <label>Java</label>
-        <br>
+        <p>
+            <input type="radio" name="lang" v-model="lang" value="JavaScript"> JavaScript
+        </p>
+        <p>
+            <input type="radio" name="lang" v-model="lang" value="Python"> Python
+        </p>
+        <p>
+            <input type="radio" name="lang" v-model="lang" value="Java"> Java
+        </p>
         <label>Опыт?</label>
-        <input type="text" v-model="Exp">
+        <input type="text" v-model="exp" placeholder="Введите значение">
         <label>лет</label>
         <br>
         <label>Ваша зарплата</label>
-        {{ salaryJS }}
-    </div> -->
+        ${{ salary }}
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="js/app.js"></script>
